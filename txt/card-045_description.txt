@@ -1,0 +1,24 @@
+ID # 45
+
+Title:
+Assign MGS Vacancy PAR Number Organizations using UDFs
+
+Description:
+As an HR QMS user I want the Organization of my team's Vacancy PAR Number Missing Errors 
+to be set using the Vacancy User Defined field using the "HR Spec Assigned Branch" 
+so that the QMS issue stays with the organization that owns the Vacancy Announcement
+
+
+Acceptance Criteria:
+1. For Vacancy Announcement PAR Number Missing Errors - use the HR Spec Assigned Branch in the Vacancy UDFs 
+	so that we make sure it stays with the organization that owns the Vacancy instead of whereever the user may or may not be
+
+2. Same processing for Vacancy Announcement PAR Number Format errors - use the same UDF
+
+A mapping may need to exist from the UDF value to the QMS organization if they are spelled slightly different.
+
+
+Reproduce Steps:
+To test...
+Find an Announcement where the HR Manager field is someone not in QMS
+Check the QMS issue - ensure that the Organization is set to the value of the UDF
