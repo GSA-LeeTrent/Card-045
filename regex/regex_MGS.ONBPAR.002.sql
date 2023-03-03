@@ -1,4 +1,4 @@
-  declare c_onboard_value_format cursor for
+  -- declare c_onboard_value_format cursor for
     select mgs_mstr_adhoc_g_position.record_id,
 	       mgs_mstr_adhoc_g_position.vacancy_number,  
            mgs_mstr_adhoc_g_new_hire.last_name, 
@@ -13,3 +13,14 @@
        and exists (select 'x' from hiring.mgs_mstr_adhoc_g_vacancy_request_numbers
                    where mgs_mstr_adhoc_g_vacancy_request_numbers.request_number = mgs_mstr_adhoc_g_position.par_number
                    and   mgs_mstr_adhoc_g_vacancy_request_numbers.request_number not regexp  '^[0-9]+[CU]$');
+				   
+				   
+-- NO ROWS RETURNED IN DEV			  
+
+-- 16 ROWS RETURN IN TEST 
+
+
+
+    select  mgs_mstr_adhoc_g_position.par_number
+      from  hiring.mgs_mstr_adhoc_g_positiont
+	 where  mgs_mstr_adhoc_g_position.par_number not regexp  '^[0-9]+[CU]$';
