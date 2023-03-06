@@ -1,5 +1,7 @@
+USE new_hrdw;
+DROP PROCEDURE IF EXISTS new_hrdw.nhrdw_mgs_adhoc_g_cert_application_validate;
 DELIMITER $$
-CREATE DEFINER=`vcrawley`@`%` PROCEDURE `nhrdw_mgs_adhoc_g_cert_application_validate`(
+CREATE DEFINER=`ltrent`@`%` PROCEDURE `nhrdw_mgs_adhoc_g_cert_application_validate`(
    in p_transaction_control_id            bigint
  )
 begin
@@ -123,11 +125,22 @@ begin
 --  left outer join hiring.mgs_mstr_adhoc_g_users        on  mgs_mstr_adhoc_g_users.user_id = mgs_mstr_adhoc_g_vacancy.vacancy_hr_manager 
   left outer join hiring.mgs_mstr_adhoc_g_user_management        on  mgs_mstr_adhoc_g_user_management.user_id = mgs_mstr_adhoc_g_certificate.certificate_created_by
   left outer join hiring.mgs_mstr_adhoc_g_udf on  mgs_mstr_adhoc_g_udf.fk_an_vacancy_id = mgs_mstr_adhoc_g_cert_application.fk_an_vacancy_id 
-  where   mgs_mstr_adhoc_g_cert_application.applicant_par_number is not null 
-  and     mgs_mstr_adhoc_g_cert_application.applicant_par_number not REGEXP  '^[0-9]+[CU]$'
-  and     mgs_mstr_adhoc_g_udf.udf_field_label = 'HR Spec Assigned Branch'
-  and     mgs_mstr_adhoc_g_cert_application.application_status_display = 'HIRED'
-  and     mgs_mstr_adhoc_g_udf.udf_field_value not in ('J', 'Executive Resources');
+  where mgs_mstr_adhoc_g_udf.udf_field_label = 'HR Spec Assigned Branch'
+  and   mgs_mstr_adhoc_g_cert_application.application_status_display = 'HIRED'
+  and   mgs_mstr_adhoc_g_udf.udf_field_value not in ('J', 'Executive Resources')
+  and   mgs_mstr_adhoc_g_cert_application.applicant_par_number is not null 
+  and   mgs_mstr_adhoc_g_cert_application.applicant_par_number not REGEXP  '^[0-9]+[CU]$'
+  and   mgs_mstr_adhoc_g_cert_application.applicant_par_number not regexp  '^[0-9]+[CU], [0-9]+[CU]$'
+  and   mgs_mstr_adhoc_g_cert_application.applicant_par_number not regexp  '^[0-9]+[CU], [0-9]+[CU], [0-9]+[CU]$'
+  and   mgs_mstr_adhoc_g_cert_application.applicant_par_number not regexp  '^[0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU]$'
+  and   mgs_mstr_adhoc_g_cert_application.applicant_par_number not regexp  '^[0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU]$'
+  and   mgs_mstr_adhoc_g_cert_application.applicant_par_number not regexp  '^[0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU]$'
+  and   mgs_mstr_adhoc_g_cert_application.applicant_par_number not regexp  '^[0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU]$'
+  and   mgs_mstr_adhoc_g_cert_application.applicant_par_number not regexp  '^[0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU]$'
+  and   mgs_mstr_adhoc_g_cert_application.applicant_par_number not regexp  '^[0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU]$'
+  and   mgs_mstr_adhoc_g_cert_application.applicant_par_number not regexp  '^[0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU]$'  
+  and   mgs_mstr_adhoc_g_cert_application.applicant_par_number not regexp  '^[0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU], [0-9]+[CU]$';
+
   
   
 
