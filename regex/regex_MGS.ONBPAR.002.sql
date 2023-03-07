@@ -22,5 +22,5 @@
 
 
     select  mgs_mstr_adhoc_g_position.par_number
-      from  hiring.mgs_mstr_adhoc_g_positiont
-	 where  mgs_mstr_adhoc_g_position.par_number not regexp  '^[0-9]+[CU]$';Function:
+      from  hiring.mgs_mstr_adhoc_g_position
+	 where  mgs_mstr_adhoc_g_position.par_number not regexp  '^[0-9]+[CU]$';
