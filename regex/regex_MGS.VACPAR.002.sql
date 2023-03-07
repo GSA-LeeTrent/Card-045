@@ -18,3 +18,14 @@
   and     exists ( select 'x' from hiring.mgs_mstr_adhoc_g_vacancy_request_numbers
                    where mgs_mstr_adhoc_g_vacancy_request_numbers.vacancy_id = mgs_mstr_adhoc_g_vacancy.vacancy_id
                    and   mgs_mstr_adhoc_g_vacancy_request_numbers.request_number not regexp  '^[0-9]+[CU]$'
+                 );
+				 
+				 
+-----
+
+select mgs_mstr_adhoc_g_vacancy_request_numbers.request_number 
+from hiring.mgs_mstr_adhoc_g_vacancy_request_numbers
+join hiring.mgs_mstr_adhoc_g_vacancy 
+on mgs_mstr_adhoc_g_vacancy_request_numbers.vacancy_id = mgs_mstr_adhoc_g_vacancy.vacancy_id
+and mgs_mstr_adhoc_g_vacancy.vacancy_created_date >= '2021-10-01' 
+where mgs_mstr_adhoc_g_vacancy_request_numbers.request_number regexp  '^[0-9]+[CU]$';
