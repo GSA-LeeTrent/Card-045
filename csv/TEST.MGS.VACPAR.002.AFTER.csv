@@ -1,0 +1,69 @@
+vacancy_id,vacancy_announcement_number,vacancy_cpdf_code,vacancy_hr_manager_name,vacancy_open_date,vacancy_request_official,vacancy_request_no,email
+105338,22PBSA153LRMP,GS03,"Rhodes, Lorree",2021-12-27,"Mari Urias/Patricia Ortiz",4237U/3207U,lorree.rhodes@gsa.gov
+105343,22PBSA154LRDE,GS03,"Rhodes, Lorree",2021-12-27,"Mari Urias/Patricia Ortiz",4237U/3207U,lorree.rhodes@gsa.gov
+105387,22PBSC087MRMP,GS03,"Robinson, Mary",2021-12-22,"Brenda Lee","3399U, 3505U, 3564U, 3454U, 3341U, 3285U & 3247U",marya.robinson@gsa.gov
+105417,22PBSA208LRMP,GS03,"Rhodes, Lorree",2021-12-29,"Terrance Cowley/Justin Panasiuk",4466U/4468U,lorree.rhodes@gsa.gov
+105538,22PBSC145DDMP,GS03,"Dickerson, Danielle",2022-01-13,"Pamela Ray","1364C / 3737U",danielle.dickerson@gsa.gov
+105616,22PBSB306TGDE,GS03,"Gibbs, Theresa",2022-01-31,"Courtney Hatchel / William Winczner",4982U/4991U/4992U,theresa.gibbs@gsa.gov
+105629,22PBSB305TGMP,GS03,"Gibbs, Theresa",2022-01-31,"Courtney Hatchel / William Winczner",4982U/4991U/4992U,theresa.gibbs@gsa.gov
+105846,22PBSB407JCDE,GS03,"Crockwell, Jessica",2022-02-23,NULL,"5318U 5347U",jessica.crockwell@gsa.gov
+105889,22PBSB431JCDE,GS03,"Crockwell, Jessica",2022-03-07,NULL,"5433u 5495u",jessica.crockwell@gsa.gov
+105890,22PBSB432JCMP,GS03,"Crockwell, Jessica",2022-03-07,NULL,"5433u 5495u",jessica.crockwell@gsa.gov
+105954,22PBSC463KTDE,GS03,"Towe, Kelvin",2022-03-04,"Robert Schall","5027U 4699U",kelvin.towe@gsa.gov
+105987,22PBSB478TGMP,GS03,"Gibbs, Theresa",2022-03-28,"Sylvia Hermann/Kathryn Leonardo",5804U/5806U,theresa.gibbs@gsa.gov
+105991,22PBSB469TGMP,GS03,"Gibbs, Theresa",2022-03-23,"Antoine Bell","5758U / 2084C",theresa.gibbs@gsa.gov
+106114,22PBSB521TGMP,GS03,"Gibbs, Theresa",2022-04-18,"Courtney Hatchel",6277U/6278U/2310C/2311C,theresa.gibbs@gsa.gov
+106117,22PBSC530KTMP,GS03,"Robinson, Mary",2022-04-08,"Kennedy, Marianne","6149U,5901U,6195U,5903U,6196U. 6176U",marya.robinson@gsa.gov
+106147,22PBSB535JCMP,GS03,"Crockwell, Jessica",2022-04-11,NULL,"6164U 6162U",jessica.crockwell@gsa.gov
+106242,22FASA306MDMP,GS30,"Sterling, Marquis",2022-06-23,"Stephen Triplett",7574U;7575U,marquis.sterling-davis@gsa.gov
+106271,"TEST ONLY - DO NOT APPLY",GS03,"Gibbs, Theresa",2022-04-23,NULL,"1234U, 341C2",theresa.gibbs@gsa.gov
+106346,22STFA229TSMP,GS11,"Starling, Tomiko",2022-05-20,"Sherilyn Hoffner Tomeika Manuel","6528U 6530U",tomiko.starling@gsa.gov
+106387,22STFA236TSMP,GS11,"Starling, Tomiko",2022-06-09,"Neil Parris Carol Remsberg","6436U 7200U",tomiko.starling@gsa.gov
+106395,22FASC346UZMP,GS30,"Shannon, Reona",2022-05-19,"Wayne Emmett Masters","7152U and 7153U",reona.shannon@gsa.gov
+106455,22STFA248LHMP,GS14,"Hayes, Lauren",2022-06-09,"Tymika McClinton","7122U 7210U",lauren.hayes@gsa.gov
+106723,22PBSB832SHMP,GS03,"Hoskins, Saray",2022-07-13,"Latisha Holyfield",6921u/692u,saray.hoskins@gsa.gov
+106797,22FASA445NSBMP,GS30,"Snead-burney, Natalie",2022-07-29,NULL,7992,natalie.snead-burney@gsa.gov
+106927,22FASB478TJMP,GS30,"Jones, Teresa",2022-08-23,"Laura Farley","8362U AND 8363U",teresa.jones@gsa.gov
+106943,22PBSB919JCDE,GS03,"Gibbs, Theresa",2022-08-24,"Kathryn Leonardo/Courtney Hatchel/Antoine Bell",8508U/8509U/8510U/8511U/8512U,theresa.gibbs@gsa.gov
+106964,22PBSB941JCDE,GS03,"Crockwell, Jessica",2022-09-08,NULL,"8299u 2951c 8419U",jessica.crockwell@gsa.gov
+106965,22PBSB942JCMP,GS03,"Crockwell, Jessica",2022-09-08,NULL,"8299u 2951c 8419U",jessica.crockwell@gsa.gov
+106969,22PBSB935TGMP,GS03,"Gibbs, Theresa",2022-09-06,"Sylvia Hermann / Kathryn Leonardo","3043C / 3044C",theresa.gibbs@gsa.gov
+107016,22PBSB970JCMP,GS03,"Crockwell, Jessica",2022-09-12,"jOSE FRIAS","8539u 6956U 6349U",jessica.crockwell@gsa.gov
+107017,22PBSB969JCDE,GS03,"Crockwell, Jessica",2022-09-12,"Thomas Dahlke","8539U 6956U 6349U",jessica.crockwell@gsa.gov
+107031,22PBSA963TJMP,GS03,"Jett, Thomas",2022-09-09,"Johnny South",1234,thomas.jett@gsa.gov
+107084,22PBSB994TWMP,GS03,"Wells, Tashay",2022-09-21,NULL,"8976U,8977U,8981U,8983U,8985U,8986U, 9143U 9146",tashay.wells@gsa.gov
+107167,22PBSB1036JCMP,GS03,"Crockwell, Jessica",2022-10-04,"Winnie Eng, Nicholas Uom","4220C 4221C 4223C",jessica.crockwell@gsa.gov
+107177,22PBSB1038TGMP,GS03,"Gibbs, Theresa",2022-10-20,"Kathryn Leonardo/Lucrezia Patruno/Richard Weller","9107U / 9109U / 9110U /9114U/ 4688C",theresa.gibbs@gsa.gov
+107199,23STFA003MBMP,GS31,"Briscoe, Michelle",2022-10-13,"Kevin Lapierre","8668U 8656U",michelle.briscoe@gsa.gov
+107200,23FASC004UZMP,GS30,"Shannon, Reona",2022-10-05,"Wayne Emmett Masters","9245U 9155U",reona.shannon@gsa.gov
+107249,23PBSB039JCOTR,GS03,"Crockwell, Jessica",2022-10-31,NULL,"5115C 5117C",jessica.crockwell@gsa.gov
+107265,23PBSB046JCDE,GS03,"Crockwell, Jessica",2022-10-26,Getter,"8095U 3021C 9390U",jessica.crockwell@gsa.gov
+107304,23PBSB047JCMP,GS03,"Crockwell, Jessica",2022-10-26,GETTER,"8095u 3021c 9390u",jessica.crockwell@gsa.gov
+107411,23PBSB141JCDE,GS03,"Crockwell, Jessica",2022-11-02,NULL,"5770C 5773C",jessica.crockwell@gsa.gov
+107416,23PBSB142JCMP,GS03,"Crockwell, Jessica",2022-11-02,"Edwin Rios","5770C 5773C",jessica.crockwell@gsa.gov
+107442,23PBSB158AWMP,GS03,"Wajid-ali, Alesha",2022-11-09,"Mark Dremel Barbara Peyton","9363U 9609U",alesha.wajid-ali@gsa.gov
+107444,23PBSB157AWDE,GS03,"Wajid-ali, Alesha",2022-11-09,"Mark Dremel Barbara Peyton","9363U 9609U",alesha.wajid-ali@gsa.gov
+107474,235TFB0455L-DHA,GS28,"Small, Toynia",2022-11-07,"Christian Bridges",ATTS0IU,toynia.small@gsa.gov
+107562,23PBSB213JCDE,GS03,"Crockwell, Jessica",2023-01-03,NULL,"8591U 9394U 10084U 3075C",jessica.crockwell@gsa.gov
+107563,23PBSB214JCMP,GS03,"Crockwell, Jessica",2023-01-03,NULL,"8591U 9394U 10084U 3075C",jessica.crockwell@gsa.gov
+107560,23FASA077MDMP,GS30,"Sterling, Marquis",2022-11-28,"Deyon Francis",9863U;9865U,marquis.sterling-davis@gsa.gov
+107623,414LDtest,GS20,"Duvall, MGS_Lauren",2022-12-03,NULL,"par number is very long 123",lauren.duvall@monster.com
+107682,23FASA098SOMP,GS30,"Oliver, Sameika",2022-12-19,"David Lopez",10237I,sameika.oliver@gsa.gov
+107776,23FACC113UZMP,GS32,"Shannon, Reona",2023-01-03,"Nathan Cahoon",Pending,reona.shannon@gsa.gov
+107809,23FASC124UZMP,GS30,"Shannon, Reona",2023-03-13,NULL,Pending,reona.shannon@gsa.gov
+107817,23PBSA347LRMP,GS03,"Lindsey, Julie",2023-01-13,"Zerlina Wong/Kristen Miller",PENDING,julie.lindsey@gsa.gov
+107823,23PBSB349LRMP,GS03,"Darden, Eboni",2023-01-13,Multiple,Pending,eboni.darden@gsa.gov
+107891,23STFA120MBMP,GS31,"Briscoe, Michelle",2023-02-01,"Roy Crowe & Jermaine Brown","10586U & 9463U",michelle.briscoe@gsa.gov
+107908,23PBSA407LRDE,GS03,"Lindsey, Julie",2023-01-23,Multiple,Pending,julie.lindsey@gsa.gov
+107910,23PBSB409LRDE,GS03,"Darden, Eboni",2023-01-24,Multiple,Pending,eboni.darden@gsa.gov
+107914,23PBSB411TWMP,GS03,"Wells, Tashay",2023-02-16,NULL,"10914, 10915, 10918, 10919, 10920, 10921",tashay.wells@gsa.gov
+107963,23PBSA433TJMP,GS03,"Jett, Thomas",2023-01-27,"Jennifer Mollenshott",Pending,thomas.jett@gsa.gov
+108049,23FASB168TJMP,GS30,"Jones, Teresa",2023-02-07,NULL,"11062U,11063U, 11064U, 11065",teresa.jones@gsa.gov
+108156,23PBSB533JCOTR,GS03,"Crockwell, Jessica",2023-02-17,"SAPAN SHAH","11505U 5117C",jessica.crockwell@gsa.gov
+108168,"TN QMS2",GS30,"Nickle, Theresa",2023-02-21,NULL,"1234, 4578U, 6789R",theresa.nickle@gsa.gov
+108192,23STFB169SS-DHA,GS01,"Simmons, Shenora",2023-02-24,"Jessie Posilkin",11337U/11338U,shenora.simmons@gsa.gov
+108204,23PBSB560CSMP,GS03,"Smith, Celestine",2023-02-27,"Erin Harbin/Tarali Pena/Robert Kuti","10653, 10654, 10655, 10656",celestine.smith@gsa.gov
+108212,23PBSA561LRMP,GS03,"Rhodes, Lorree",2023-02-28,"Denise Ryerkerk",Pending,lorree.rhodes@gsa.gov
+108215,23PBSA564LRDE,GS03,"Rhodes, Lorree",2023-03-01,"Katherine Swan",Pending,lorree.rhodes@gsa.gov
+108245,23FASB200TBMP,GS30,"BoClair, Tina",2023-03-06,"Maurice Smith",11781,tina.boclair@gsa.gov
+108252,23PBSB576JAMP,GS03,"Adamson, Jacqueline",2023-03-08,"Jennifer Enyart",17026,jacqueline.adamson@gsa.gov

@@ -1,5 +1,7 @@
+USE new_hrdw;
+DROP PROCEDURE IF EXISTS new_hrdw.nhrdw_mgs_adhoc_g_vacancy_validate;
 DELIMITER $$
-CREATE DEFINER=`vcrawley`@`%` PROCEDURE `nhrdw_mgs_adhoc_g_vacancy_validate`(
+CREATE DEFINER=`ltrent`@`%` PROCEDURE `nhrdw_mgs_adhoc_g_vacancy_validate`(
    in p_transaction_control_id            bigint
  )
 begin
@@ -66,6 +68,7 @@ begin
           ,mgs_mstr_adhoc_g_vacancy.vacancy_request_official
           ,mgs_mstr_adhoc_g_vacancy.vacancy_request_no
           ,mgs_mstr_adhoc_g_user_management.email
+		  ,mgs_mstr_adhoc_g_udf.udf_field_value
   from    hiring.mgs_mstr_adhoc_g_vacancy  
   left outer join hiring.mgs_mstr_adhoc_g_department       on  mgs_mstr_adhoc_g_vacancy.fk_v_department_id = mgs_mstr_adhoc_g_department.department_id
   left outer join hiring.mgs_mstr_adhoc_g_user_management  on  mgs_mstr_adhoc_g_user_management.user_id = mgs_mstr_adhoc_g_vacancy.vacancy_hr_manager
@@ -76,7 +79,7 @@ begin
   and     mgs_mstr_adhoc_g_udf.udf_field_value not in ('J', 'Executive Resources')
   and     exists ( select 'x' from hiring.mgs_mstr_adhoc_g_vacancy_request_numbers
                    where mgs_mstr_adhoc_g_vacancy_request_numbers.vacancy_id = mgs_mstr_adhoc_g_vacancy.vacancy_id
-                   and   mgs_mstr_adhoc_g_vacancy_request_numbers.request_number not regexp  '^[0-9]+[CU]$'
+                   and TRIM(mgs_mstr_adhoc_g_vacancy_request_numbers.request_number) not regexp  '^[0-9]+[CU]$'
                  );
     
  declare continue handler for not found set l_rownotfound = true;
@@ -169,24 +172,15 @@ begin
                                    ,l_vacancy_open_date                 
                                    ,l_vacancy_request_official 
                                    ,l_vacancy_request_no         
-                                   ,l_user_email_address     ;
+                                   ,l_user_email_address
+								   ,l_udf_organization;
                                    
        if ( l_rownotfound = true )  
        then          
               close c_vacancy_number_format;
               leave c_vacancy_number_format_loop;
        end if; 
-       
-       call nhrdw_mgs_routing_key (            
-                                          l_vacancy_announcement_number  
-                                         ,l_vacancy_cpdf_code 
-                                         ,l_qms_routing_key_field_1         
-                                         ,l_qms_routing_key_field_2         
-                                         ,l_qms_routing_key_field_3         
-                                         ,l_qms_routing_key_field_4         
-                                         ,l_qms_routing_key_field_5         
-                                  );
-       
+              
        call nhrdw_qms_notifications_api 
                                 (
                                        p_transaction_control_id                                                                                                                           
@@ -216,12 +210,10 @@ begin
                                      ,null                                                                                                                        
                                      ,l_qms_routing_key_field_1                                                                                                                  
                                      ,l_qms_routing_key_field_2                                                                                                                  
-                                     ,l_qms_routing_key_field_3                                                                                                                  
+                                     ,l_udf_organization                                                                                                                  
                                      ,l_qms_routing_key_field_4                                                                                                                  
                                      ,l_qms_routing_key_field_5                                                                               
                                   );                                            
-       
- 
      
   end loop;        
        
