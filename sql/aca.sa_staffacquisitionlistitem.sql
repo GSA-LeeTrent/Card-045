@@ -1,0 +1,1 @@
+SELECT qms_error_code, count(qms_error_code) FROM aca.sa_staffacquisitionlistitem GROUP BY qms_error_code;
