@@ -1,9 +1,5 @@
-use new_hrdw;
-
-drop procedure nhrdw_mgs_adhoc_g_vacancy_validate;
-
-DELIMITER //
-CREATE  PROCEDURE nhrdw_mgs_adhoc_g_vacancy_validate(
+DELIMITER $$
+CREATE DEFINER=`HRDWCORPDATA`@`%` PROCEDURE `nhrdw_mgs_adhoc_g_vacancy_validate`(
    in p_transaction_control_id            bigint
  )
 begin
@@ -238,5 +234,5 @@ begin
      
   end loop;        
        
-end
-//DELIMITER ;
+end$$
+DELIMITER ;
